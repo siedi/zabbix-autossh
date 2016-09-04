@@ -23,6 +23,4 @@ RUN chmod +x /autossh-start.sh
 # Standard Zabbix Agent Port
 EXPOSE 10050
 
-VOLUME /root/.ssh/id_rsa
-
 ENTRYPOINT ["/autossh-start.sh"]
