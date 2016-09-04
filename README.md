@@ -4,6 +4,8 @@ While running a Zabbix server at home using the nice https://github.com/monitori
 
 ### Setup docker container
 
+Either you build the image by yourself, already including the private key file, then follow the first three steps. Or you can mount a host volume includig your generated id_rsa file by adding the option -v /path/to/your/id_rsa:/root/.ssh/id_rsa
+
 Clone Repository
 ```
 git clone https://github.com/siedi/zabbix-autossh.git

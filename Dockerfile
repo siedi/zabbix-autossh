@@ -3,7 +3,7 @@
 # VERSION               0.0.1
 
 FROM alpine
-MAINTAINER Matthias Siedler
+MAINTAINER siedi <matthias@siedler.com>
 
 # Adding ssh key
 RUN mkdir -p /root/.ssh
@@ -22,5 +22,7 @@ RUN chmod +x /autossh-start.sh
 
 # Standard Zabbix Agent Port
 EXPOSE 10050
+
+VOLUME /root/.ssh/id_rsa
 
 ENTRYPOINT ["/autossh-start.sh"]
